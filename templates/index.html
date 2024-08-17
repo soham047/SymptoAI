@@ -1,0 +1,122 @@
+<html>
+<head>
+    <link rel   = "stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>DiagnoAI</h1>
+    <form action='/submit' method='POST'>
+        <div class="dropdown-container">
+            
+            <div>
+                <label for="dropdown0">Glucose</label>
+                <input type="text" placeholder="Option 0" name='i1' id='i1'>
+            </div>
+            <div>
+                <label for="dropdown0">Cholesterol</label>
+                <input type="text" placeholder="Option 0" name='i2' id='i2'>
+            </div>
+            <div>
+                <label for="dropdown0">Haemoglobin</label>
+                <input type="text" placeholder="Option 0" name='i3' id='i3'>
+            </div>
+            <div>
+                <label for="dropdown0">Platelets</label>
+                <input type="text" placeholder="Option 0" name ='i4' id='i4'>
+            </div>
+            <div>
+                <label for="dropdown0">White Blood Cells</label>
+                <input type="text" placeholder="Option 0" name='i5' id='i5'>
+            </div>
+            <div>
+                <label for="dropdown0">Red Blood Cells</label>
+                <input type="text" placeholder="Option 0" name ='i6' id='i6'>
+            </div>
+            <div>
+                <label for="dropdown0">Hematocrit</label>
+                <input type="text" placeholder="Option 0" name='i7' id='i7'>
+            </div>
+            <div>
+                <label for="dropdown0">MCV</label>
+                <input type="text" placeholder="Option 0" name='i8' id='i8'>
+            </div>
+            <div>
+                <label for="dropdown0">MCH</label>
+                <input type="text" placeholder="Option 0" name='i9' id='i9'>
+            </div>
+            <div>
+                <label for="dropdown0">MCH Conc.</label>
+                <input type="text" placeholder="Option 0" name='i10' id='i10'>
+            </div>
+            <div>
+                <label for="dropdown0">Insulin</label>
+                <input type="text" placeholder="Option 0" name='i11' id='i11'>
+            </div>
+            <div>
+                <label for="dropdown0">BMI</label>
+                <input type="text" placeholder="Option 0" name='i12' id='i12'>
+            </div>
+            <div>
+                <label for="dropdown0">Systolic Blood Pressure</label>
+                <input type="text" placeholder="Option 0" name='i13' id='i13'>
+            </div>
+            <div>
+                <label for="dropdown0">Diastolic Blood Pressure</label>
+                <input type="text" placeholder="Option 0" name='i14' id='i14'>
+            </div>
+            <div>
+                <label for="dropdown0">Triglycerides</label>
+                <input type="text" placeholder="Option 0" name='i15' id='i15'>
+            </div>
+            <div>
+                <label for="dropdown0">HbA1c</label>
+                <input type="text" placeholder="Option 0" name='i16' id='i16'>
+            </div>
+            <div>
+                <label for="dropdown0">LDL Cholesterol</label>
+                <input type="text" placeholder="Option 0" name='i17' id='i17'>
+            </div>
+            <div>
+                <label for="dropdown0">HDL Cholesterol</label>
+                <input type="text" placeholder="Option 0" name='i18' id='i18'>
+            </div>
+            <div>
+                <label for="dropdown0">ALT</label>
+                <input type="text" placeholder="Option 0" name='i19' id='i19'>
+            </div>
+            <div>
+                <label for="dropdown0">AST</label>
+                <input type="text" placeholder="Option 0" name='i20' id='i20'>
+            </div>
+            <div>
+                <label for="dropdown0">Heart Rate</label>
+                <input type="text" placeholder="Option 0" name='i21' id='i21'>
+            </div>
+            <div>
+                <label for="dropdown0">Creatinine</label>
+                <input type="text" placeholder="Option 0" name='i22' id='i22'>
+            </div>
+            <div>
+                <label for="dropdown0">Troponine</label>
+                <input type="text" placeholder="Option 0" name='i23' id='i23'>
+            </div>
+            <div>
+                <label for="dropdown0">C-reactive Protein</label>
+                <input type="text" placeholder="Option 0" name='i24' id='i24'>
+            </div>
+            
+        </div>
+        <div class="submit-button" action='/submit', method="POST">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<div class='footer'>
+    
+    <p class='status'>Health Status : </p>
+    <p class='text'>{{status}}</p>
+</div>
+
+</body>
+</html>
